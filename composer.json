@@ -3,9 +3,11 @@
   "description": "Library for work with PDF files",
   "minimum-stability": "stable",
   "license": "MIT",
-  "keywords": ["pdf","pdf metadata"],
+  "keywords": [
+    "pdf",
+    "pdf metadata"
+  ],
   "type": "library",
-  "version": "1.0.0",
   "authors": [
     {
       "name": "Vladislav Meleshkin",
@@ -13,7 +15,6 @@
     }
   ],
   "autoload": {
-    "autoload": {
     "psr-4": {
       "PHPdfer\\": "src"
     }
