@@ -22,6 +22,12 @@ modify metadata in PDF files. This method accepts three arguments:
 After end work library will create new PDF file with prefix `phpdfer_`, when into it will change metadata specified in
 `$arMetadata`.
 
+## Installation
+
+```
+composer require jasta-fly/phpdfer
+```
+
 ## Warning!
 
 For work this library need install `Ghostscript` in You operating system. You can check is this program installed,
