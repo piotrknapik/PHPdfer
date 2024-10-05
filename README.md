@@ -1,6 +1,6 @@
 # Phpdfer
 
-**Phpdfer** - this library on PHP, for modify metadata in PFD files.
+**Phpdfer** - this library on PHP, for modify metadata in PDF files.
 
 For start work with this library You must create instance of class `PHPdfer`, and use method `changeMetadata()` for
 modify metadata in PDF files. This method accepts three arguments:
@@ -18,6 +18,7 @@ modify metadata in PDF files. This method accepts three arguments:
 * `MOD_DATE` - date modification PDF file;
 * `CREATION_DATE` - date creation PDF file;
 * `CREATOR` - creator PDF file.
+* `PRODUCER` - PDF file producer
 
 After end work library will create new PDF file with prefix `phpdfer_`, when into it will change metadata specified in
 `$arMetadata`.

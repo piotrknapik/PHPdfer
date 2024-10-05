@@ -56,6 +56,10 @@ class MetadataDirector
             $metaData .= $metaDataBuilder->setCreator();
         }
 
+        if ($arMetadata['PRODUCER']) {
+            $metaData .= $metaDataBuilder->setProducer($arMetadata['PRODUCER']);
+        }
+
         $metaData .= $metaDataBuilder->setLastCharacter();
 
         return $metaData;

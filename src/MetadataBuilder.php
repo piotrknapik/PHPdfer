@@ -44,6 +44,10 @@ class MetadataBuilder
         return "/Creator ($creator)" . PHP_EOL;
     }
 
+    public function setProducer(string $producer): string
+    {
+        return "/Producer ($producer)" . PHP_EOL;
+    }
 
     public function setLastCharacter(): string
     {
