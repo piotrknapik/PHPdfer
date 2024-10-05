@@ -6,6 +6,13 @@ use Exception;
 
 class PHPdfer
 {
+    private string $outputFilePrefix = '';
+
+    public function __construct(string $outputFilePrefix = 'phpdfer_')
+    {
+        $this->outputFilePrefix = $outputFilePrefix; //i.e. 'dir/prefix_'
+    }
+
     /**
      * @param string $pdf - path to PDF file
      * @param array $arMetadata - array with metadata for PDF file
@@ -25,7 +32,7 @@ class PHPdfer
 
         preg_match('/[ \w-]+?(?=\.)/', $pdf, $matches);
 
-        $newFileName = "phpdfer_{$matches[0]}.pdf";
+        $newFileName = sprintf('%s%s.pdf', $this->outputFilePrefix, $matches[0]);
 
         file_put_contents($newFileName, '');
 
